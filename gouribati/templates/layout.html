@@ -9,25 +9,25 @@
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <!--====== Title ======-->
-    <title>Gouribati Haribasor</title>
+    <title>{% block title %} {% endblock %}</title>
     <!--====== Favicon Icon ======-->
-    <link rel="shortcut icon" href="{% static "img/favicon.png" %} type="img/png" />
+    <!-- <link rel="shortcut icon" href="{% static "img/favicon.png" %}" type="img/png" /> -->
     <!--====== Animate Css ======-->
-    <link rel="stylesheet" href="{% static "css/animate.min.css" %}>
+    <link rel="stylesheet" href="{% static "css/animate.min.css" %}">
     <!--====== Bootstrap css ======-->
-    <link rel="stylesheet" href="{% static "css/bootstrap.min.css" %} />
+    <link rel="stylesheet" href="{% static "css/bootstrap.min.css" %}" />
     <!--====== Fontawesome css ======-->
-    <link rel="stylesheet" href="{% static "css/font-awesome.min.css" %} />
+    <link rel="stylesheet" href="{% static "css/font-awesome.min.css" %}" />
     <!--====== Flaticon css ======-->
-    <link rel="stylesheet" href="{% static "css/flaticon.css" %} />
+    <link rel="stylesheet" href="{% static "css/flaticon.css" %}" />
     <!--====== Magnific Popup css ======-->
-    <link rel="stylesheet" href="{% static "css/magnific-popup.css" %} />
+    <link rel="stylesheet" href="{% static "css/magnific-popup.css" %}" />
     <!--====== Slick  css ======-->
-    <link rel="stylesheet" href="{% static "css/slick.css" %} />
+    <link rel="stylesheet" href="{% static "css/slick.css" %}" />
     <!--====== Jquery ui ======-->
-    <link rel="stylesheet" href="{% static "css/jquery-ui.min.css" %} />
+    <link rel="stylesheet" href="{% static "css/jquery-ui.min.css" %}" />
     <!--====== Style css ======-->
-    <link rel="stylesheet" href="{% static "css/style.css" %} />
+    <link rel="stylesheet" href="{% static "css/style.css" %}" />
     {% block head %}
 
     {% endblock head %}
@@ -46,7 +46,7 @@
                 <div class="nav-container">
                     <!-- Site Logo -->
                     <div class="site-logo">
-                        <a href="index.html"><img src="{% static "img/logo.png" %} alt="Logo"></a>
+                        <a href="/"><img src="{% static "img/logo.png" %}" alt="Logo"></a>
                     </div>
 
                     <!-- Main Menu -->
@@ -60,9 +60,9 @@
                         <!-- Mneu Items -->
                         <div class="menu-items">
                             <ul>
-                                <li><a href="#">Home</a></li>
+                                <li><a href="/">Home</a></li>
                                 <li><a href="#">About Us</a></li>
-                                <li><a href="#"> Contact Us </a></li>
+                                <li><a href="/contact_us"> Contact Us </a></li>
                             </ul>
 
                         </div>
@@ -75,7 +75,7 @@
 
                         <div class="navbar-btn nav-push-item">
                             <a class="main-btn main-btn-3" href="#"> <span class="rupees-icon"> <img
-                                        src="{% static "img/rupees.png" %}> </span> Donate </a>
+                                        src="{% static "img/rupees.png" %}"> </span> Donate </a>
                         </div>
 
                         <div class="navbar-toggler">
@@ -97,7 +97,7 @@
                         <div class="col-lg-6">
                             <div class="banner-content">
                                 <h3 class="promo-text" data-animation="fadeInDown" data-delay="0.8s">
-                                    Hore Krishno Naam Dilo.
+                                    Hare Krishna Hare Krishna.
                                 </h3>
 
 
@@ -121,7 +121,7 @@
                     <div class="col-lg-4 col-sm-4 text-left">
                         <div class="widget site-info-widget">
                             <div class="footer-logo">
-                                <a href="#"> <img src="{% static "img/logo.png" %} alt="images"> </a>
+                                <a href="#"> <img src="{% static "img/logo.png" %}" alt="images"> </a>
                             </div>
                             <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
                                 has been the industry's standard dummy text ever since the 1500s, when an unknown
@@ -144,12 +144,12 @@
                         <div class="footer-menu-vartical">
                             <h4> Quick links </h4>
                             <ul>
-                                <li> <a href="#"> Home </a> </li>
+                                <li> <a href="/"> Home </a> </li>
                                 <li> <a href="#"> About Us </a> </li>
-                                <li> <a href="#"> Contact Us </a> </li>
-                                <li> <a href="#"> Privacy Policy </a> </li>
+                                <li> <a href="/contact_us"> Contact Us </a> </li>
+                                <!-- <li> <a href="#"> Privacy Policy </a> </li>
                                 <li> <a href="#"> Terms of Service </a> </li>
-                                <li> <a href="#"> Support </a> </li>
+                                <li> <a href="#"> Support </a> </li> -->
 
                             </ul>
                         </div>
@@ -189,7 +189,7 @@
         </div>
 
         <div class="donate-bottom">
-            <a href="#"> <span class="donate-bottom-sticky"> <img src="{% static "img/rupees.png" %}> </span> Donate </a>
+            <a href="#" style="box-shadow: 1px 4px 43px 4px rgba(0,0,0,0.6);"> <span class="donate-bottom-sticky"> <img src="{% static "img/rupees.png" %}"> </span> Donate </a>
         </div>
 
     </footer>
@@ -198,19 +198,19 @@
 
 
     <!--====== jquery js ======-->
-    <script src="{% static "js/vendor/modernizr-3.6.0.min.js" %}></script>
-    <script src="{% static "js/vendor/jquery-1.12.4.min.js" %}></script>
+    <script src="{% static "js/vendor/modernizr-3.6.0.min.js" %}"></script>
+    <script src="{% static "js/vendor/jquery-1.12.4.min.js" %}"></script>
     <!--====== Bootstrap js ======-->
-    <script src="{% static "js/bootstrap.min.js" %}></script>
-    <script src="{% static "js/popper.min.js" %}></script>
+    <script src="{% static "js/bootstrap.min.js" %}"></script>
+    <script src="{% static "js/popper.min.js" %}"></script>
     <!--====== Slick js ======-->
-    <script src="{% static "js/slick.min.js" %}></script>
+    <script src="{% static "js/slick.min.js" %}"></script>
     <!--====== Jquery Ui ======-->
-    <script src="{% static "js/jquery-ui.min.js" %}></script>
+    <script src="{% static "js/jquery-ui.min.js" %}"></script>
     <!--====== Wow JS ======-->
-    <script src="{% static "js/wow.min.js" %}></script>
+    <script src="{% static "js/wow.min.js" %}"></script>
     <!--====== Main js ======-->
-    <script src="{% static "js/main.js" %}></script>
+    <script src="{% static "js/main.js" %}"></script>
     {% block script %}
 
     {% endblock script %}

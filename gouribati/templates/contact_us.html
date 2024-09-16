@@ -1,0 +1,51 @@
+{% extends "layout.html" %}
+{% load static %}
+{% block title %}Contact Us{% endblock %}
+{% block body %}
+	<!--====== Feature Part start ======-->
+	<section class="section-gap">
+		<div class="container">
+			
+			<!-- Feature boxes -->
+			<div class="feature-boxes row justify-content-center">
+				<div class="col-lg-10 col-md-6 col-10 col-tiny-12 wow fadeInLeft" data-wow-duration="1500ms" data-wow-delay="400ms">
+				  <div class="contact-form">
+				  	<h3 class="mb-4"> Drop your Message Here. </h3> 
+				  	<form>
+					 <div class="row">
+					    <div class="col">
+					      <input type="text" class="form-control" placeholder="Name">
+					    </div>
+					    <div class="col">
+					      <input type="email" class="form-control" placeholder="Email address">
+					    </div>
+					 </div>
+					 <div class="row">
+					    <div class="col">
+					      <input type="text" class="form-control" placeholder="Subject">
+					    </div>
+					    <div class="col">
+					      <input type="tel" class="form-control" placeholder="Phone Number">
+					    </div>
+					 </div>
+					 <div class="row">
+					    <div class="col">
+					      <textarea class="form-control" placeholder="Message" rows="3"></textarea>
+					    </div>
+					    
+					 </div>
+					 <div class="row">
+					   <div class="col">
+					    <button type="submit" class="btn btn-primary"> Send <span class="btn-icon"> <i class="fas fa-paper-plane"></i> </span>  </button>
+					   </div>
+				     </div>
+				   </form>
+				  </div>
+				</div>
+
+				
+			</div>
+		</div>
+	</section>
+	<!--====== Feature Part end ======-->
+{% endblock %}

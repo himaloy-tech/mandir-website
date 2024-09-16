@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class AppieConfig(AppConfig):
+class GouribatiConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'appie'
+    name = 'gouribati'

@@ -1,0 +1,219 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--====== Required meta tags ======-->
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!--====== Title ======-->
+    <title>Gouribati Haribasor</title>
+    <!--====== Favicon Icon ======-->
+    <link rel="shortcut icon" href="{% static "img/favicon.png" %} type="img/png" />
+    <!--====== Animate Css ======-->
+    <link rel="stylesheet" href="{% static "css/animate.min.css" %}>
+    <!--====== Bootstrap css ======-->
+    <link rel="stylesheet" href="{% static "css/bootstrap.min.css" %} />
+    <!--====== Fontawesome css ======-->
+    <link rel="stylesheet" href="{% static "css/font-awesome.min.css" %} />
+    <!--====== Flaticon css ======-->
+    <link rel="stylesheet" href="{% static "css/flaticon.css" %} />
+    <!--====== Magnific Popup css ======-->
+    <link rel="stylesheet" href="{% static "css/magnific-popup.css" %} />
+    <!--====== Slick  css ======-->
+    <link rel="stylesheet" href="{% static "css/slick.css" %} />
+    <!--====== Jquery ui ======-->
+    <link rel="stylesheet" href="{% static "css/jquery-ui.min.css" %} />
+    <!--====== Style css ======-->
+    <link rel="stylesheet" href="{% static "css/style.css" %} />
+    {% block head %}
+
+    {% endblock head %}
+</head>
+{% block style %}
+
+{% endblock style %}
+
+<body>
+
+    <!--====== Header part start ======-->
+    <header class="sticky-header">
+        <!-- Header Menu  -->
+        <div class="header-nav">
+            <div class="container">
+                <div class="nav-container">
+                    <!-- Site Logo -->
+                    <div class="site-logo">
+                        <a href="index.html"><img src="{% static "img/logo.png" %} alt="Logo"></a>
+                    </div>
+
+                    <!-- Main Menu -->
+                    <div class="nav-menu d-lg-flex align-items-right">
+
+                        <!-- Navbar Close Icon -->
+                        <div class="navbar-close">
+                            <div class="cross-wrap"><span></span><span></span></div>
+                        </div>
+
+                        <!-- Mneu Items -->
+                        <div class="menu-items">
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#"> Contact Us </a></li>
+                            </ul>
+
+                        </div>
+                        <!-- Pushed Item -->
+                        <div class="nav-pushed-item"></div>
+                    </div>
+
+                    <!-- Navbar Extra  -->
+                    <div class="navbar-extra d-lg-block d-flex align-items-center">
+
+                        <div class="navbar-btn nav-push-item">
+                            <a class="main-btn main-btn-3" href="#"> <span class="rupees-icon"> <img
+                                        src="{% static "img/rupees.png" %}> </span> Donate </a>
+                        </div>
+
+                        <div class="navbar-toggler">
+                            <span></span><span></span><span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--====== Header part end ======-->
+
+    <!--====== Banner part start ======-->
+    <section class="banner-section" style="background:url(static/img/banner.jpg);">
+        <div class="banner-slider"> <!-- id="bannerSlider" -->
+            <div class="single-banner">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-6">
+                            <div class="banner-content">
+                                <h3 class="promo-text" data-animation="fadeInDown" data-delay="0.8s">
+                                    Hore Krishno Naam Dilo.
+                                </h3>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {% block body %}
+
+    {% endblock body %}
+
+    <!--====== Footer Part Start ======-->
+    <footer>
+        <div class="container">
+            <div class="footer-widget">
+                <div class="row">
+                    <div class="col-lg-4 col-sm-4 text-left">
+                        <div class="widget site-info-widget">
+                            <div class="footer-logo">
+                                <a href="#"> <img src="{% static "img/logo.png" %} alt="images"> </a>
+                            </div>
+                            <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                printer took a galley of type and scrambled it to make a type specimen book. </p>
+
+                            <div class="socail-box">
+                                <h4> Follow us </h4>
+                                <ul class="social-links">
+                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-4 col-sm-4 text-left">
+
+                        <div class="footer-menu-vartical">
+                            <h4> Quick links </h4>
+                            <ul>
+                                <li> <a href="#"> Home </a> </li>
+                                <li> <a href="#"> About Us </a> </li>
+                                <li> <a href="#"> Contact Us </a> </li>
+                                <li> <a href="#"> Privacy Policy </a> </li>
+                                <li> <a href="#"> Terms of Service </a> </li>
+                                <li> <a href="#"> Support </a> </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-4 text-left">
+                        <div class="contact-info">
+                            <h4> Contact us </h4>
+                            <div class="contact-details">
+                                <ul>
+                                    <li>
+                                        <span class="contact-label"> Email Id: </span>
+                                        <a href="#"> emailaddress@mail.com </a>
+                                    </li>
+                                    <li>
+                                        <span class="contact-label"> Phone Number: </span>
+                                        <a href="#"> +91 0000000000 </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="map">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7447680.001556246!2d82.55187453521718!3d24.292007054386634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fa16ff1397e887%3A0x71543a3dc3e7a20a!2sWest%20Bengal!5e0!3m2!1sen!2sin!4v1726321583120!5m2!1sen!2sin"
+                                    width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p class="copyright-text">
+                © 2024. All rights reserved.
+            </p>
+        </div>
+        </div>
+
+        <div class="donate-bottom">
+            <a href="#"> <span class="donate-bottom-sticky"> <img src="{% static "img/rupees.png" %}> </span> Donate </a>
+        </div>
+
+    </footer>
+    <!--====== Footer Part end ======-->
+
+
+
+    <!--====== jquery js ======-->
+    <script src="{% static "js/vendor/modernizr-3.6.0.min.js" %}></script>
+    <script src="{% static "js/vendor/jquery-1.12.4.min.js" %}></script>
+    <!--====== Bootstrap js ======-->
+    <script src="{% static "js/bootstrap.min.js" %}></script>
+    <script src="{% static "js/popper.min.js" %}></script>
+    <!--====== Slick js ======-->
+    <script src="{% static "js/slick.min.js" %}></script>
+    <!--====== Jquery Ui ======-->
+    <script src="{% static "js/jquery-ui.min.js" %}></script>
+    <!--====== Wow JS ======-->
+    <script src="{% static "js/wow.min.js" %}></script>
+    <!--====== Main js ======-->
+    <script src="{% static "js/main.js" %}></script>
+    {% block script %}
+
+    {% endblock script %}
+</body>
+
+</html>

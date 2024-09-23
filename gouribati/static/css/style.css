@@ -1025,7 +1025,7 @@ header .header-nav .nav-container .language-selection .language-list li a {
 
 
 header .header-nav .nav-container.breakpoint-on {
-  padding: 15px 0;
+  padding: 0px 0;
 }
 
 header .header-nav .nav-container.breakpoint-on .nav-menu {
@@ -2079,7 +2079,7 @@ header.header-three .header-nav::before {
 .feature-boxes .feature-box {
     /* height: 450px; */
     position: relative;
-    padding: 10px;
+    /* padding: 10px; */
     display: -ms-flexbox;
     display: flex;
     flex-wrap: wrap;
@@ -2102,7 +2102,7 @@ header.header-three .header-nav::before {
     margin-bottom: 20px;
 }
 .feature-box img{
-    min-height: 500px;
+    min-height: 450px;
     max-height: 500px;
     object-fit: contain;
     border-radius: 10px;
@@ -2159,7 +2159,7 @@ header.header-three .header-nav::before {
 
 @media (max-width: 1199px) {
   .feature-boxes .feature-box {
-    padding: 25px 20px;
+    /* padding: 25px 20px; */
   }
 }
 

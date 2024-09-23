@@ -24,9 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-33xc7)(yp2mr-ul9=+rwq4zo$vb5l(!+wyeqcu2ts_uq$^2na6'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['198.54.116.91', 'gouribatiharibasor.com', 'www.gouribatiharibasor.com']
 
 
 # Application definition
@@ -75,13 +75,23 @@ WSGI_APPLICATION = 'mandir_website.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'mysql.connector.django',
+        'NAME': 'tangoaot_tangible_electrical_main',
+        'HOST': 'localhost',
+        'PORT': '3306',
+        'USER': 'gourgkjm_haribasor',
+        'PASSWORD': 'AaV&u1tTaijq',
+        'OPTIONS': {'init_command': "SET sql_mode='STRICT_TRANS_TABLES'" ,"use_pure": True},
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators

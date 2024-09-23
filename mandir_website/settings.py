@@ -84,7 +84,7 @@ WSGI_APPLICATION = 'mandir_website.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'mysql.connector.django',
-        'NAME': 'tangoaot_tangible_electrical_main',
+        'NAME': 'gourgkjm_gouribati_main',
         'HOST': 'localhost',
         'PORT': '3306',
         'USER': 'gourgkjm_haribasor',

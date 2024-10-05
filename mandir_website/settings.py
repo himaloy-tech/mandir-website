@@ -132,7 +132,7 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR/'gouribati', "static")
 ]
 
-STATIC_ROOT=os.path.join(BASE_DIR, 'assets')
+STATIC_ROOT=os.path.join(BASE_DIR, 'static')
 
 
 # Default primary key field type
